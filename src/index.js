@@ -17,6 +17,7 @@ function onSearchInput(e) {
     return;
   }
   resetCountries();
+
   fetchCountries(countryName)
     .then(countries => {
       if (countries.length > 10) {
